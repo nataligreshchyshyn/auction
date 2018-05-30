@@ -6,42 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Аукціон Не поспішаємо!</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#main">ГОЛОВНА</a>
-            <a href="#auction-lots">ЛОТИ</a>
-            <a href="#gallery">ГАЛЕРЕЯ</a>
-            <a href="#bidding">ЗАЯВКА НА ЛОТ</a>
-        </nav>
-        <form>
-            <input type="text" placeholder="Пошук...">
-            <button type="submit">
+            <form>
+                <input type="text" placeholder="Пошук...">
+                <button type="submit">
                 <img src="img/search-icon.png" alt="Пошук" width="12">
-            </button>
-        </form>
-        <h1 id="main">НЕ ПОСПІШАЄМО!</h1>
-        <h3><i>Аукціон <a href="mailto:https://plus.google.com/u/1/112893901224841723918">Марії Грещишин</a></i></h3>
+                </button>
+            </form>
+            <ul>
+                <li><a href="#main">ГОЛОВНА</a></li>
+                <li><a href="#auction-lots">ЛОТИ</a></li>
+                <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+                <li><a href="#bidding">ЗАЯВКА НА ЛОТ</a></li>
+            </ul>
+        </nav>
+        <section class="top">
+            <h1 id="main">Не поспішаємо!</h1>
+            <article>
+                <h3>Аукціон <a href="mailto:https://plus.google.com/u/1/112893901224841723918">Марії Грещишин</a></h3>
+            </article>
+        </section>
     </header>
-    <section>
+    <section class="undertop">
         <p>До Вашої уваги онлайн-аукціон гарних речей!</p>
-        <article>
             <h3>Правила</h3>
             <ol>
-                <li><a href="#auction-lots"><i>Лотів тижня</i></a> є 5 - вибрані з <a href="#gallery"><i>галереї</i></a>. Якщо лоти не активовані учасниками, то наприкінці тижня оновлюються на інші.</li>
+                <li><a href="#auction-lots">Лотів тижня</a> є 5 - вибрані з <a href="#gallery">галереї</a>. Якщо лоти не активовані учасниками, то наприкінці тижня оновлюються на інші.</li>
                 <li>Стартова ціна лоту вказана безпосередньо в описі лоту - це мінімальна ставка, яку можна зробити для даного лоту.</li>
-                <li>Учасники роблять ставки тут - <a href="#bidding"><i>ЗАЯВКА НА ЛОТ</i></a>. Ставки з мінімальним кроком 10 грн від крайньої пропозиції. (Уважно заповнюйте номер лоту і Вашу ставку в формі заявки!).</li>
+                <li>Учасники роблять ставки тут - <a href="#bidding">ЗАЯВКА НА ЛОТ</a>. Ставки з мінімальним кроком 10 грн від крайньої пропозиції. (Уважно заповнюйте номер лоту і Вашу ставку в формі заявки!).</li>
                 <li>Переможцем аукціону для кожного лоту стає учасник, ставка якого є найбільшою на момент закінчення торгів.</li>
                 <li>Лот стартує з першої ставки учасника і активний протягом 7 днів.</li>
                 <li>Галерея поповнюється новими лотами регулярно.</li>
             </ol>
-        </article>
     </section>
-    <section>
+    <main>
         <h2 id="auction-lots">ЛОТИ ТИЖНЯ</h2>
-        <article>
+        <article class="lots">
+            <img src="img/heart-owl.jpg" alt="Добра сова" width="250">
             <h3>Лот №1</h3>
             <ul style="list-style-type:none">
                 <li>Добра сова</li>
@@ -56,7 +62,6 @@
                 <li>Кінець торгів</li>
                 <li><time datetime="2018-06-04 10:00">4 червня 2018 о 10:00</time></li>
             </ul>
-            <img src="img/heart-owl.jpg" alt="Добра сова" width="250">
         </article>
         <article>
             <h3>Лот №2</h3>
@@ -126,8 +131,6 @@
             </ul>
             <img src="img/collage-poppies.jpg" alt="Колаж з маків" width="250">
         </article>
-    </section>
-    <section>
         <h2 id="gallery">ГАЛЕРЕЯ</h2>
         <figure>
             <img src="img/christmas-wreath.jpg" alt="Різдвяний вінок" width="100">
@@ -189,31 +192,29 @@
             <img src="img/heart-owl.jpg" alt="Добра сова" width="100">
             <figcaption>Добра сова</figcaption>
         </figure>
-    </section>
-    <section>
         <h2 id="bidding">ЗАЯВКА НА ЛОТ</h2>
         <p>зробіть Вашу ставку тут</p>
         <form method="POST" action="https://formspree.io/natalihreshchyshyn@gmail.com">
-            <label><i>Ваше ім'я</i>
+            <label>Ваше ім'я
                 <input type="text" name="client-name" required>
             </label>
             <br>
-            <label><i>E-mail або телефон</i>
+            <label>E-mail або телефон
                 <input type="text" name="client-connection" required>
             </label>
             <br>
-            <label><i>Номер лота</i>
+            <label>Номер лота
                 <input type="text" name="lots-number" required>
             </label>
             <br>
-            <label><i>Ваша ставка</i>
+            <label>Ваша ставка
                 <input type="text" name="client-bid" required>
             </label>
             <br>
             <input type="submit" value="Надіслати">
             <input type="reset" value="Скинути">
         </form>
-    </section>
+    </main>
     <footer>
         <nav>Зв'язатись з автором:
             <a href="form.html">Написати листа</a>

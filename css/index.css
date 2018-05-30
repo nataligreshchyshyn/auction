@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant');
+
+:root {
+    font-family: 'Cormorant Infant', Arial;
+    font-style: italic;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header {
+    height: 700px;
+    background-image: url(../img/hands.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav form {
+    display: flex;
+    margin: 14px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin: 0 2%;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: green;
+}
+
+header .top h1{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    text-transform: uppercase;
+}
+
+header .top article h3 {
+    display: flex;
+    margin: 0 0 20;
+    margin-left: 60%;
+}
+
+header .top article h3 a {
+    text-decoration: none;
+    color: green;
+    padding: 0 5px;
+}
+
+.undertop {
+    display: flex;
+    flex-direction: column;
+    margin: -530px 0 0 0;
+}
+
+.undertop p, .undertop h3 {
+    display: flex;
+    margin-left: 60%;
+    font-weight: bold;
+}
+
+.undertop ol {
+    margin-left: 50%; 
+    font-weight: bold;
+    color: hsl(20, 100%, 40%); 
+}
+.undertop ol li a {
+    text-decoration: none;
+    color: green;
+}
+
+main h2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 50px 0;
+    text-transform: uppercase;
+}
