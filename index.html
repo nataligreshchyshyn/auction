@@ -22,7 +22,7 @@
                 <li><a href="#main">ГОЛОВНА</a></li>
                 <li><a href="#auction-lots">ЛОТИ</a></li>
                 <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
-                <li><a href="#bidding">ЗАЯВКА НА ЛОТ</a></li>
+                <li><a href="#bidding">ЗАЯВКА</a></li>
             </ul>
         </nav>
         <section class="top">
@@ -33,12 +33,13 @@
         </section>
     </header>
     <section class="undertop">
+        <br>
         <p>До Вашої уваги онлайн-аукціон гарних речей!</p>
             <h3>Правила</h3>
             <ol>
                 <li><a href="#auction-lots">Лотів тижня</a> є 5 - вибрані з <a href="#gallery">галереї</a>. Якщо лоти не активовані учасниками, то наприкінці тижня оновлюються на інші.</li>
                 <li>Стартова ціна лоту вказана безпосередньо в описі лоту - це мінімальна ставка, яку можна зробити для даного лоту.</li>
-                <li>Учасники роблять ставки тут - <a href="#bidding">ЗАЯВКА НА ЛОТ</a>. Ставки з мінімальним кроком 10 грн від крайньої пропозиції. (Уважно заповнюйте номер лоту і Вашу ставку в формі заявки!).</li>
+                <li>Учасники роблять ставки тут - <a href="#bidding">ЗАЯВКА</a>. Ставки з мінімальним кроком 10 грн від крайньої пропозиції. (Уважно заповнюйте номер лоту і Вашу ставку в формі заявки!).</li>
                 <li>Переможцем аукціону для кожного лоту стає учасник, ставка якого є найбільшою на момент закінчення торгів.</li>
                 <li>Лот стартує з першої ставки учасника і активний протягом 7 днів.</li>
                 <li>Галерея поповнюється новими лотами регулярно.</li>
@@ -48,22 +49,24 @@
         <h2 id="auction-lots">ЛОТИ ТИЖНЯ</h2>
         <article class="lots">
             <img src="img/heart-owl.jpg" alt="Добра сова" width="250">
-            <h3>Лот №1</h3>
-            <ul style="list-style-type:none">
-                <li>Добра сова</li>
-                <li>Туш</li>
-                <li>12x10 см</li>
-                <li>
-                    <input type="text" name="price" value="100 грн" size=10 readonly>
-                </li>
-                <li>
-                    <input type="text" name="owner-name" value="Віка" size=10 readonly>
-                </li>
-                <li>Кінець торгів</li>
-                <li><time datetime="2018-06-04 10:00">4 червня 2018 о 10:00</time></li>
-            </ul>
+            <div>
+                <h3>Лот №1</h3>
+                <ul>
+                    <li>Добра сова</li>
+                    <li>Туш</li>
+                    <li>12x10 см</li>
+                    <li>
+                        <input type="text" name="price" value="100 грн" size=10 readonly>
+                    </li>
+                    <li>
+                        <input type="text" name="owner-name" value="Віка" size=10 readonly>
+                    </li>
+                    <li>Кінець торгів</li>
+                    <li><time datetime="2018-06-04 10:00">4 червня 2018 о 10:00</time></li>
+                </ul>
+            </div>    
         </article>
-        <article>
+        <article class="lots">
             <h3>Лот №2</h3>
             <ul style="list-style-type:none">
                 <li>Замріяна сова</li>
@@ -80,7 +83,7 @@
             </ul>
             <img src="img/dreaming-owl.jpg" alt="Замріяна сова" width="250">
         </article>
-        <article>
+        <article class="lots">
             <h3>Лот №3</h3>
             <ul style="list-style-type:none">
                 <li>Уважна сова</li>
@@ -97,7 +100,7 @@
             </ul>
             <img src="img/careful-owl.jpg" alt="Уважна сова" width="250">
         </article>
-        <article>
+        <article class="lots">
             <h3>Лот №4</h3>
             <ul style="list-style-type:none">
                 <li>Здивована сова</li>
@@ -114,18 +117,18 @@
             </ul>
             <img src="img/surprised-owl.jpg" alt="Здивована сова" width="250">
         </article>
-        <article>
+        <article class="lots">
             <h3>Лот №5</h3>
-            <ul style="list-style-type:none">
+            <ul>
                 <li>>Колаж з маків</li>
                 <li>Туш</li>
-                <li>12x10 см</li>
+                <li>12x10 см</li><p></p>
                 <li>
                     <input type="text" name="price" value="300 грн" size=10 readonly>
                 </li>
                 <li>
                     <input type="text" name="owner-name" value="" placeholder="Ім'я власника" size=10 readonly>
-                </li>
+                </li><p></p>
                 <li>Кінець торгів</li>
                 <li><time datetime="2018-06-04 10:00">4 червня 2018 о 10:00</time></li>
             </ul>

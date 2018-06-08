@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant');
+/*@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant');*/
 
 :root {
-    font-family: 'Cormorant Infant', Arial;
+    font-family: 'Helvetica', Arial;
     font-style: italic;
+    color: green;
+    background-color: #e0f2f1
 }
 
 body {
@@ -45,7 +47,7 @@ header nav ul li a {
     color: green;
 }
 
-header .top h1{
+header .top h1 {
     display: flex;
     flex: 1;
     justify-content: center;
@@ -71,17 +73,33 @@ header .top article h3 a {
     margin: -530px 0 0 0;
 }
 
-.undertop p, .undertop h3 {
+.undertop p,
+.undertop h3 {
     display: flex;
-    margin-left: 60%;
+    margin-left: 50%;
     font-weight: bold;
 }
 
 .undertop ol {
-    margin-left: 50%; 
+    margin-left: 40%;
     font-weight: bold;
-    color: hsl(20, 100%, 40%); 
+    color: hsl(16, 62%, 47%);
+    list-style-type: none;
 }
+
+.undertop ol li {
+    counter-increment: myCounter;
+}
+
+.undertop ol li::before {
+    content: counter(myCounter);
+    color: #ff9800;
+    font-size: large;
+    position: relative;
+    top: 0;
+    left: -20px;
+}
+
 .undertop ol li a {
     text-decoration: none;
     color: green;
@@ -94,3 +112,92 @@ main h2 {
     margin: 50px 0;
     text-transform: uppercase;
 }
+
+.lots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px;
+    padding: 1%;
+    background-color: #c3e6e3
+}
+
+.lots img {
+    width: 50%;
+}
+
+/*.lots h3, .lots ul {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: flex-end;*/
+/*}*/
+
+main figure {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    header {
+    height: 700px;
+    }
+    
+    header nav form {
+        display: grid;
+        grid-template: 1fr 3fr / 6fr 1fr; 
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    header .top h1 {
+        margin: 15px 0 0 0;
+    }
+}   
+
+@media (max-width: 750px) {
+    header .top article h3, .undertop p, .undertop h3 {
+        margin-left: 40%;
+    }
+    
+    .undertop ol {
+    margin-left: 30%;
+    font-size: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    header .top article h3 {
+        font-size: 15px;
+    }
+    
+    .undertop ol {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 270px) {
+    header .top article h3, .undertop p, .undertop h3 {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 750px) {
+    .lots {
+        display: 
+}
+
+@media (min-width: 980px) {
+    .lots {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+
