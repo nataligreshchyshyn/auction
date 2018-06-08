@@ -160,7 +160,7 @@ main figure img {
 main figure figcaption {
     display: flex;
     justify-content: center;
-    align-items: center;
+    font-weight: bolder;
 }
 
 main p {
@@ -202,86 +202,18 @@ main form div input {
     width: 90px;
 }
 
-@media (max-width: 600px) {
-    header {
-        height: 700px;
-    }
-
-    header nav form {
-        display: grid;
-        grid-template: 1fr 3fr / 6fr 1fr;
-    }
-
-    header nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    header .top h1 {
-        margin: 15px 0 0 0;
-    }
-    main form label {
-        font-size: 15px;
-    }
-    main form label input {
-        width: 250px;
-    }
-}
-
 @media (max-width: 750px) {
     header .top article h3,
     .undertop p,
     .undertop h3 {
         margin-left: 40%;
     }
-
     .undertop ol {
         margin-left: 30%;
         font-size: 15px;
     }
     .pics {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 420px) {
-    header .top article h3 {
-        font-size: 15px;
-    }
-    .undertop ol {
-        font-size: smaller;
-    }
-    .lots div ul {
-        font-size: small;
-    }
-    .pics {
         grid-template-columns: repeat(3, 1fr);
-    }
-    main form label {
-        font-size: small;
-    }
-    main form label input {
-        width: 150px;
-    }
-}
-
-@media (max-width: 320px) {
-    header .top article h3,
-    .undertop p,
-    .undertop h3 {
-        font-size: 12px;
-    }
-    .main-lots {
-        grid-template-columns: 1fr;
-    }
-    .lots {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1%;
-    }
-    .pics {
-        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -290,5 +222,66 @@ main form div input {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 700px;
+    }
+    header nav form {
+        display: grid;
+        grid-template: 1fr 3fr / 6fr 1fr;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    header .top h1 {
+        margin: 15px 0 0 0;
+    }
+    .pics {
+        grid-template-columns: 1fr 1fr;
+    }
+    main form label {
+        font-size: 15px;
+    }
+    main form label input {
+        width: 250px;
+    }
+    #tel {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px) {
+    header .top article h3,
+    .undertop p,
+    .undertop h3 {
+        font-size: 12px;
+    }
+    .undertop ol {
+        font-size: smaller;
+    }
+    .main-lots {
+        grid-template-columns: 1fr;
+    }
+    .lots {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+    }
+    .pics {
+        grid-template-columns: 1fr;
+    }
+    .lots div ul {
+        font-size: small;
+    }
+    main form label {
+        font-size: small;
+    }
+    main form label input {
+        width: 150px;
     }
 }
