@@ -9,6 +9,7 @@
 
 body {
     max-width: 980px;
+    min-width: 410px;
     margin: auto;
 }
 
@@ -19,35 +20,35 @@ header {
     background-position: center;
 }
 
-header nav {
+.navbar {
     display: flex;
 }
 
-header nav form {
+.form-inline {
     display: flex;
     margin: 14px 0;
 }
 
-header nav ul {
+.navbar-nav {
     display: flex;
     flex: 1;
     justify-content: flex-end;
     align-items: center;
 }
 
-header nav ul li {
+.nav-item {
     list-style-type: none;
     margin: 0 2%;
 }
 
-header nav ul li a {
+.nav-link {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     color: green;
 }
 
-header .top h1 {
+.top h1 {
     display: flex;
     flex: 1;
     justify-content: center;
@@ -55,13 +56,13 @@ header .top h1 {
     text-transform: uppercase;
 }
 
-header .top article h3 {
+.top article h3 {
     display: flex;
     margin: 0 0 20;
-    margin-left: 60%;
+    margin-left: 40%;
 }
 
-header .top article h3 a {
+.top article h3 a {
     text-decoration: none;
     color: green;
     padding: 0 5px;
@@ -165,14 +166,17 @@ main figure figcaption {
 
 main p {
     display: flex;
+    flex: 1;
+    justify-content: center;
     margin: 0 0 20;
-    margin-left: 40%;
+    background-color: #c3e6e3;
 }
 
 main form {
     display: grid;
     grid-template-columns: 1fr 10%;
     grid-row-gap: 10px;
+    background-color: #c3e6e3;
 }
 
 main form label {
@@ -202,8 +206,25 @@ main form div input {
     width: 90px;
 }
 
+footer {
+    background-color: #c3e6e3;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 @media (max-width: 750px) {
-    header .top article h3,
+    .top article h3,
     .undertop p,
     .undertop h3 {
         margin-left: 40%;
@@ -226,19 +247,19 @@ main form div input {
 }
 
 @media (max-width: 600px) {
-    header {
-        height: 700px;
-    }
-    header nav form {
-        display: grid;
-        grid-template: 1fr 3fr / 6fr 1fr;
-    }
-    header nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    header .top h1 {
+    /*header {*/
+    /*    height: 700px;*/
+    /*}*/
+    /*header nav form {*/
+    /*    display: grid;*/
+    /*    grid-template: 1fr 3fr / 6fr 1fr;*/
+    /*}*/
+    /*header nav ul {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    align-items: flex-end;*/
+    /*}*/
+    .top h1 {
         margin: 15px 0 0 0;
     }
     .pics {
@@ -256,7 +277,9 @@ main form div input {
 }
 
 @media (max-width: 450px) {
-    header .top article h3,
+    .top article h3 {
+        font-size: larger;
+    }
     .undertop p,
     .undertop h3 {
         font-size: 12px;
