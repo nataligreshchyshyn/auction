@@ -17,8 +17,10 @@ function sendForm(e) {
                 bid:  document.querySelector('.client-form input[name=client-bid]').value,
             })
         })
-        .then( response => {
-            form.reset();
-        } )
+        .then( response => response.json() )
+        .then( lotsData => {
+         document.querySelector('.last-client-name').innerText = lotsData.name;
+         document.querySelector('.last-client-bid').innerText = lotsData.bid;
+        })
     }
 }
