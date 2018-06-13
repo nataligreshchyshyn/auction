@@ -1,0 +1,107 @@
+[
+    {
+        "id": "1",
+        "title": "Різдвяний вінок",
+        "image": "christmas-wreath.jpg",
+        "description": "20x20см. Червоно-біла кольорова гамма.",
+        "price": 300.00 
+    },
+    {
+        "id": "2",
+        "title": "Ялинкові прикраси",
+        "image": "christmass-tree-things.jpg",
+        "description": "5x10см. Комплект-сніжинка: серце, рукавиця, черевик.",
+        "price": 300.00 
+    },
+    {
+        "id": "3",
+        "title": "Великодній вінок",
+        "image": "easter-wreath.jpg",
+        "description": "20x20см. Штучні квіти, писанки, гніздо зозулі.",
+        "price": 300.00 
+    },
+    {
+        "id": "4",
+        "title": "Зелено-червоний півник",
+        "image": "green-red-coco.jpg",
+        "description": "Довжина 25см. Тканина в зелено-червону клітинку. Наповнювач.",
+        "price": 200.00 
+    },
+    {
+        "id": "5",
+        "title": "Біло-сірий півник",
+        "image": "white-gray-coco.jpg",
+        "description": "Висота 30см. Тканина з біло-сірим орнаментом. Наповнювач.",
+        "price": 200.00 
+    },
+    {
+        "id": "6",
+        "title": "Дівчата з велосипедами",
+        "image": "ladies-on-bikes-frame.jpg",
+        "description": "30х40см. Гуаш. Акрил.",
+        "price": 300.00 
+    },
+    {
+        "id": "7",
+        "title": "Подушка для обручок",
+        "image": "pillow-for-wedding-rings.jpg",
+        "description": "15х20см. Картонна стійка коробка у формі серця. Атласна подушка з наповнювачем.",
+        "price": 150.00 
+    },
+    {
+        "id": "8",
+        "title": "Рожеві троянди",
+        "image": "pink-roses.jpg",
+        "description": "30х20см. Гуаш.",
+        "price": 200.00 
+    },
+    {
+        "id": "9",
+        "title": "Білі троянди",
+        "image": "white-roses.jpg",
+        "description": "30х20см. Гуаш.",
+        "price": 200.00 
+    },
+    {
+        "id": "10",
+        "title": "Червоні тюльпани",
+        "image": "red-tulips.jpg",
+        "description": "30х40см. Гуаш.",
+        "price": 250.00 
+    },
+    {
+        "id": "11",
+        "title": "Колаж з маків",
+        "image": "collage-poppies.jpg",
+        "description": "15х20см. Колаж з чотирьох окремих картин.",
+        "price": 250.00 
+    },
+    {
+        "id": "12",
+        "title": "Здивована сова",
+        "image": "surprised-owl.jpg",
+        "description": "12х10см. Туш.",
+        "price": 100.00 
+    },
+    {
+        "id": "13",
+        "title": "Уважна сова",
+        "image": "careful-owl.jpg",
+        "description": "12х10см. Туш.",
+        "price": 100.00 
+    },
+    {
+        "id": "14",
+        "title": "Замріяна сова",
+        "image": "dreaming-owl.jpg",
+        "description": "12х10см. Туш.",
+        "price": 100.00 
+    },
+    {
+        "id": "15",
+        "title": "Добра сова",
+        "image": "heart-owl.jpg",
+        "description": "12х10см. Туш.",
+        "price": 100.00 
+    }
+]
