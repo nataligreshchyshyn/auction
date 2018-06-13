@@ -23,3 +23,4 @@ document.querySelector('.last-client-bid')
     .innerText = lastDay.setDate(lastDay.getDate() + 7);
 });
 
+const lotList = new LotList('lot-list.json', $('.lots-container'));

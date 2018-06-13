@@ -1,7 +1,6 @@
-const lotList = new LotList('lot-list.json', $('.lots-container'));
 class LotList {
     constructor (lotsUrl, renderContainer) {
-        fetch(lotsURL)
+        fetch(lotsUrl)
             .then(result => result.json() )
             .then(lots => {
                 this.lots = lots;
