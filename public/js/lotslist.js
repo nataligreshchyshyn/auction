@@ -22,18 +22,4 @@ class LotList {
         });
         container.html(lotListDomString);
     }
-     addEventListeners() {
-        $('#lotInfoModal').on('show.bs.modal', event => {
-            const button = $(event.relatedTarget); // Button that triggered the modal
-            const id  = String(button.data('id')); // Extract info from data-* attributes
-            const lot = this.getLotById(id);
-            const modal = $('#lotInfoModal');
-            modal.find('.modal-body .card-img-top')
-                .attr('src', 'img/'+lot.image)
-                .attr('alt', lot.title);
-            modal.find('.modal-body .card-title').text(lot.title);
-            modal.find('.modal-body .card-text').text(lot.description);
-        });
-    }
 }
-

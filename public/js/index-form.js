@@ -19,7 +19,7 @@ function sendForm(e) {
         })
         .then( response => response.json() )
         .then( lotsData => {
-         document.getElementById('lot-1')   
+         document.getElementById('lot-1');  
          document.querySelector('.last-client-name').innerText = lotsData.name;
          document.querySelector('.last-client-bid').innerText = lotsData.bid;
         });

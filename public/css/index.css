@@ -3,14 +3,15 @@
 :root {
     font-family: 'Helvetica', Arial;
     font-style: italic;
-    color: green;
-    background-color: #e0f2f1
+    background-color: #e0f2f1;
 }
 
 body {
     max-width: 980px;
-    min-width: 410px;
+    min-width: 360px;
     margin: auto;
+    color: green;
+    background-color: #c3e6e3;
 }
 
 header {
@@ -37,15 +38,15 @@ header {
 }
 
 .nav-item {
-    list-style-type: none;
     margin: 0 2%;
 }
 
 .nav-link {
     font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: green;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: green; 
 }
 
 .top h1 {
@@ -58,37 +59,41 @@ header {
 
 .top article h3 {
     display: flex;
-    margin: 0 0 20;
-    margin-left: 40%;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 .top article h3 a {
     text-decoration: none;
-    color: green;
+    color: orange;
     padding: 0 5px;
 }
 
 .undertop {
     display: flex;
     flex-direction: column;
-    margin: -530px 0 0 0;
+    margin: -510px 0 0 0;
 }
 
 .undertop p,
 .undertop h3 {
     display: flex;
-    margin-left: 50%;
     font-weight: bold;
+    margin: 2% 0 0 50%;
+}
+
+.undertop p {
+    color: orange;
 }
 
 .undertop ol {
-    margin-left: 40%;
+    margin: 1rem 1rem 1rem 30%;
     font-weight: bold;
-    color: hsl(16, 62%, 47%);
     list-style-type: none;
 }
 
 .undertop ol li {
+    margin: 1% 0 1% 0;
     counter-increment: myCounter;
 }
 
@@ -103,7 +108,7 @@ header {
 
 .undertop ol li a {
     text-decoration: none;
-    color: green;
+    color: orange;
 }
 
 main h2 {
@@ -138,14 +143,14 @@ main h2 {
     list-style-type: none;
 }
 
-.pics {
+.lots-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1%;
     background-color: #c3e6e3;
 }
 
-main figure {
+.lots-container figure {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -154,11 +159,11 @@ main figure {
     margin: 0;
 }
 
-main figure img {
+.lots-container figure img {
     width: 100%;
 }
 
-main figure figcaption {
+.lots-container figure figcaption {
     display: flex;
     justify-content: center;
     font-weight: bolder;
@@ -193,17 +198,27 @@ main form label input {
     width: 300px;
 }
 
+.lot-number {
+    justify-content: flex-start;
+    margin-left: 10px;
+    width: 300px;
+}
+
 main form div {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-main form div input {
+main form div input[type=submit], 
+main form div input[type=reset] {
     display: flex;
     justify-content: center;
     margin: 10px 10px;
     width: 90px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
 }
 
 footer {
@@ -215,6 +230,11 @@ footer nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+}
+
+footer nav a {
+    color: orange;
 }
 
 footer nav div {
@@ -233,7 +253,7 @@ footer nav div {
         margin-left: 30%;
         font-size: 15px;
     }
-    .pics {
+    .lots-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -247,28 +267,19 @@ footer nav div {
 }
 
 @media (max-width: 600px) {
-    /*header {*/
-    /*    height: 700px;*/
-    /*}*/
-    /*header nav form {*/
-    /*    display: grid;*/
-    /*    grid-template: 1fr 3fr / 6fr 1fr;*/
-    /*}*/
-    /*header nav ul {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    align-items: flex-end;*/
-    /*}*/
     .top h1 {
         margin: 15px 0 0 0;
     }
-    .pics {
+    .undertop ol {
+    margin-left: 20%;
+    }
+    .lots-container {
         grid-template-columns: 1fr 1fr;
     }
     main form label {
         font-size: 15px;
     }
-    main form label input {
+    main form label input, .lot-number {
         width: 250px;
     }
     #tel {
@@ -295,7 +306,7 @@ footer nav div {
         grid-template-columns: 1fr;
         grid-gap: 1%;
     }
-    .pics {
+    .lots-container {
         grid-template-columns: 1fr;
     }
     .lots div ul {
@@ -304,7 +315,7 @@ footer nav div {
     main form label {
         font-size: small;
     }
-    main form label input {
+    main form label input, .lot-number {
         width: 150px;
     }
 }

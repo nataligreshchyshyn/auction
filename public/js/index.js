@@ -16,11 +16,4 @@ $(function() {
     });
 });
 
-const lastDay = new Date();
-document.querySelector('.last-client-bid')
-  .addEventListener('change', function() {
-  document.querySelector('.time')
-    .innerText = lastDay.setDate(lastDay.getDate() + 7);
-});
-
 const lotList = new LotList('lot-list.json', $('.lots-container'));

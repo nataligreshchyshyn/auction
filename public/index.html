@@ -17,7 +17,6 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control" type="search" placeholder="Шукаємо..." aria-label="Search">
@@ -39,7 +38,6 @@
             </article>
         </section>
     </header>
-    
     <section class="undertop">
         <br>
         <p>До Вашої уваги онлайн-аукціон гарних речей!</p>
@@ -54,7 +52,7 @@
         </ol>
     </section>
     <main>
-        <h2 id="auction-lots">ЛОТИ ТИЖНЯ</h2>
+        <h2 class="smooth" id="auction-lots">ЛОТИ ТИЖНЯ</h2>
         <section class="main-lots">
             <article class="lots">
                 <img src="img/heart-owl.jpg" alt="Добра сова">
@@ -72,7 +70,7 @@
                         <li>
                             <label>Поточний власник: 
                                 <span class="last-client-name"></span>
-                            </label>                        
+                            </label>
                         </li>
                         <li>Кінець торгів</li>
                         <li class="time"></li>
@@ -95,10 +93,11 @@
                         <li>
                             <label>Поточний власник: 
                                 <span class="last-client-name"></span>
-                            </label>                        
+                            </label>
                         </li>
                         <li>Кінець торгів</li>
-                        <li class="time"></li>                    </ul>
+                        <li class="time"></li>
+                    </ul>
                 </div>
             </article>
             <article class="lots">
@@ -117,10 +116,11 @@
                         <li>
                             <label>Поточний власник: 
                                 <span class="last-client-name"></span>
-                            </label>                        
+                            </label>
                         </li>
                         <li>Кінець торгів</li>
-                        <li class="time"></li>                    </ul>
+                        <li class="time"></li> \
+                    </ul>
                 </div>
             </article>
             <article class="lots">
@@ -139,10 +139,11 @@
                         <li>
                             <label>Поточний власник: 
                                 <span class="last-client-name"></span>
-                            </label>                        
+                            </label>
                         </li>
                         <li>Кінець торгів</li>
-                        <li class="time"></li>                    </ul>
+                        <li class="time"></li>
+                    </ul>
                 </div>
             </article>
             <article class="lots">
@@ -161,7 +162,7 @@
                         <li>
                             <label>Поточний власник: 
                                 <span class="last-client-name1"></span>
-                            </label>                        
+                            </label>
                         </li>
                         <li>Кінець торгів</li>
                         <li class="time"></li>
@@ -169,12 +170,12 @@
                 </div>
             </article>
         </section>
-            <h2 id="gallery">ГАЛЕРЕЯ</h2>
-            <section class="row lots-container">
-            </section>
-        <h2 id="bidding">ЗАЯВКА НА ЛОТ</h2>
+        <h2 class="smooth" id="gallery">ГАЛЕРЕЯ</h2>
+        <section class="lots-container">
+        </section>
+        <h2 class="smooth" id="bidding">ЗАЯВКА НА ЛОТ</h2>
         <p>Зробіть Вашу ставку тут</p>
-        <form class="client-form method="POST" action="https://formspree.io/natalihreshchyshyn@gmail.com"">
+        <form class="client-form method=" POST " action="https://formspree.io/natalihreshchyshyn@gmail.com "">
             <label>Ваше ім'я     
                 <input class="client-name" type="text" name="client-name" required>
             </label>
@@ -183,8 +184,14 @@
                 <input class="client-contact" type="text" name="client-contact" required>
             </label>
             <br>
-            <label>Номер лота     
-                <input class="lot-number" type="text" name="lot-number" required>
+            <label>Номер лота      
+                <select class="lot-number" name="lot-number">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
             </label>
             <br>
             <label>Ваша ставка     
@@ -211,35 +218,12 @@
             </div>
         </nav>
     </footer>
-    
-    <div class="modal fade" id="lotInfoModal" tabindex="-1" role="dialog" aria-labelledby="lottInfoLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="lotInfoLabel">Про Лот</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img class="card-img-top" src="" alt="">
-                    <h4 class="card-title"></h4>
-                    <p class="card-text"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="js/index-form.js"></script>
     <script src="js/lotslist.js"></script>
     <script src="js/index.js"></script>
-
 </body>
 
 </html>
