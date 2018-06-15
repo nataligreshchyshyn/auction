@@ -8,9 +8,9 @@
     },
     {
         "id": "2",
-        "title": "Ялинкові прикраси",
-        "image": "christmass-tree-things.jpg",
-        "description": "5x10см. Комплект-сніжинка: серце, рукавиця, черевик.",
+        "title": "Дівчата з велосипедами",
+        "image": "ladies-on-bikes-frame.jpg",
+        "description": "30х40см. Гуаш. Акрил.",
         "price": 300.00 
     },
     {
@@ -22,24 +22,24 @@
     },
     {
         "id": "4",
+        "title": "Ялинкові прикраси",
+        "image": "christmass-tree-things.jpg",
+        "description": "5x10см. Комплект-сніжинка: серце, рукавиця, черевик.",
+        "price": 300.00 
+    },
+    {
+        "id": "5",
         "title": "Зелено-червоний півник",
         "image": "green-red-coco.jpg",
         "description": "Довжина 25см. Тканина в зелено-червону клітинку. Наповнювач.",
         "price": 200.00 
     },
     {
-        "id": "5",
+        "id": "6",
         "title": "Біло-сірий півник",
         "image": "white-gray-coco.jpg",
         "description": "Висота 30см. Тканина з біло-сірим орнаментом. Наповнювач.",
         "price": 200.00 
-    },
-    {
-        "id": "6",
-        "title": "Дівчата з велосипедами",
-        "image": "ladies-on-bikes-frame.jpg",
-        "description": "30х40см. Гуаш. Акрил.",
-        "price": 300.00 
     },
     {
         "id": "7",

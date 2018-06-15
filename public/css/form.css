@@ -1,0 +1,74 @@
+/*@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant');*/
+
+:root {
+    font-family: 'Helvetica', Arial;
+    font-style: italic;
+    background-color: #e0f2f1;
+}
+
+body {
+    max-width: 980px;
+    min-width: 450px;
+    margin: auto;
+    color: green;
+    background-color: #c3e6e3;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-row-gap: 10px;
+    margin-top: 5%;
+}
+
+form label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+form label input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 10px;
+    width: 400px;
+}
+
+form label textarea {
+    justify-content: flex-start;
+    margin-left: 10px;
+    width: 400px;
+}
+
+form input[type=submit] {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 10px 10px;
+    width: 90px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    form {
+        display: grid;
+        grid-template-columns: 1fr 20%;                                                                         grid-template-columns: 1fr 10%;
+    }
+    form label input,
+    form label textarea {
+        width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        display: grid;
+        grid-template-columns: 1fr 20%;                                                                         grid-template-columns: 1fr 10%;
+    }
+    form label input,
+    form label textarea {
+        width: 300px;
+    }
+}

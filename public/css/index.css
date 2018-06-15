@@ -169,6 +169,14 @@ main h2 {
     font-weight: bolder;
 }
 
+.btn {
+    background-color: #e0f2f1;
+    color: green;
+    cursor: pointer;
+    border: 1px solid green;
+    margin-top: 2%;
+}
+
 main p {
     display: flex;
     flex: 1;
